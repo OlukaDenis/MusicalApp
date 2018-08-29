@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onAlbumSelected(Album album) {
         Intent playActivity = new Intent(MainActivity.this, PlayingActivity.class);
-        
+
         startActivity(playActivity);
     }
 

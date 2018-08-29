@@ -24,6 +24,7 @@ import java.util.ArrayList;
  */
 public class AlbumFragment extends android.support.v4.app.Fragment{
     private OnAlbumSelectedListener mListener;
+    private SongFragment songFragment;
 
     public AlbumFragment() {
         // Required empty public constructor
@@ -42,6 +43,8 @@ public class AlbumFragment extends android.support.v4.app.Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.grid_view_item, container, false);
+
+        songFragment = new SongFragment();
 
         final ArrayList<Album> albums = new ArrayList<>();
         albums.add(new Album("Perfect", "Ed-Sheeran", R.drawable.perfect));
