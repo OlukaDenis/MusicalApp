@@ -12,5 +12,8 @@
     <string name="songs">songs</string>
 
     <string name="now_playing">Now playing</string>
-    <string name="play_time">4:10</string>
+    <string name="play_time">3:40</string>
+    <string name="played_time">0:40</string>
+
+    <string name="playing_alt_pic">Playing song cover</string>
 </resources>

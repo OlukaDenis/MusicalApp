@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="5dp"
-    android:elevation="5dp">
+    android:padding="@dimen/padding_xsmall"
+    android:elevation="@dimen/padding_xsmall">
 
     <ImageView
         android:id="@+id/album_cover"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/bg_size"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/chrisb" />
@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#ddd"
-        android:padding="12dp">
+        android:background="@color/album_bg"
+        android:padding="@dimen/margin_small">
 
         <TextView
             android:id="@+id/album_title"
@@ -28,16 +28,16 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
-            tools:text="Loyal" />
+            android:textSize="@dimen/text_larger"
+            tools:text="" />
 
         <TextView
             android:id="@+id/album_artist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:textSize="14sp"
-            tools:text="Chris Brown" />
+            android:textSize="@dimen/text_small"
+            tools:text="" />
     </LinearLayout>
 
 
